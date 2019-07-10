@@ -1,51 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+@import "reset.css";
+/* @import "normalize.css"; */
 
 /* Set every element's box-sizing to border-box */
 * {
@@ -64,3 +18,199 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* index Page CSS */
+html {
+	max-width: 1024px;
+	font-size: 62.5%;
+	margin: auto;
+}
+header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+nav {
+	/* border: 2px solid red; */
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+nav a {
+	text-decoration: none;
+	margin: 5% 0% 5% 0%;
+	color: lightgrey;
+	font-size: 1.3rem;
+}
+.navBarLogo {
+	/* border: 2px solid green; */
+	width: 20%;
+	height: 10%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 2.5% 0% 0% 0%
+}
+.headerLeft {
+	/* border: 2px solid red; */
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.headerLeft h1 {
+	font-size: 7.0rem;
+}
+.headerLeft button {
+	background-color: white;
+	font-size: 2.0rem;
+}
+.headerRight {
+	/* border: 2px solid green; */
+	width: 40%;
+
+}
+hr {
+	width: 100%;
+	height:2px;
+	border-width:0;
+	color:black;
+	background-color:black;
+	margin: 2% 0% 2% 0%;
+	display: flex;
+	justify-content: center;
+}
+.topArticle {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.6rem;
+}
+.features {
+	width: 48%;
+	margin: auto;
+}
+.about {
+	width: 48%;
+	margin: auto;
+}
+.middle-img {
+	width: 100%;
+	margin: 2% 0% 2% 0%;
+}
+.bottomArticle {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.6rem
+}
+.services {
+	width: 30%;
+}
+.product {
+	width: 30%;
+}
+.vision {
+	width: 30%;
+}
+address {
+	font-size: 1.6rem;
+}
+footer {
+	font-size: 1.6rem;
+	text-align: center;
+	margin: 2% 0% 2% 0%;
+}
+/* Service Page CSS */
+.topImageArticle {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.6rem;
+}
+.servicesPageServices {
+	margin: 0% 0% 0% 0%;
+}
+.servicesArticleCenter {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	font-size: 1.6rem;	
+}
+.servicesArticleCenter h2 {
+	margin: 5% 5% 5% 5%;
+}
+.servicesArticleCenter p {
+	padding: 0% 5% 5% 5%;
+}
+.servicesArticleCenter button {
+	width: 30%;
+	height: 20%;
+	margin: 0% 5% 10% 5%;
+	border-radius: 15%;
+	background-color: white;
+}
+.digitalDesign {
+	width: 45%;
+	border: 1px solid black;
+	background-color: lightgrey;
+	margin-bottom: 5%;
+}
+.uxui {
+	width: 45%;
+	border: 1px solid black;
+	background-color: lightgrey;
+	margin-bottom: 5%;
+}
+.digitalMarketing {
+	width: 45%;
+	border: 1px solid black;
+	background-color: lightgrey;
+	margin-bottom: 5%;
+}
+.webDevelopment {
+	width: 45%;
+	border: 1px solid black;
+	background-color: lightgrey;
+	margin-bottom: 5%;
+}
+.iosDevelopment {
+	width: 45%;
+	border: 1px solid black;
+	background-color: lightgrey;
+	margin-bottom: 3%;
+}
+.androidDevelopment {
+	width: 45%;
+	border: 1px solid black;
+	background-color: lightgrey;
+	margin-bottom: 3%;
+}
+.bottomArticleImage {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.6rem;
+	
+}
+.bottomArticleImage ul {
+	list-style-type: square;
+}
+.bottomArticleList {
+	width: 45%;
+	margin: 0% 0% 0% 2%;
+}
+.bottomArticleList ul{
+	margin: 5% 0% 0% 3%;
+	line-height: 1.6;
+}
+.bottomImage {
+	width: 45%;
+}
